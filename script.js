@@ -235,8 +235,8 @@ function cpu(cpuNum) {
       }
     });
 
-    const numAleatorio = quadradosVazio[numeroAleatorio(quadradosVazio.length)];
-    console.log(numeroAleatorio(quadradosVazio.length));
+    const numAleatorio = quadradosVazio[numeroAleatorio(quadradosVazio.length-1)];
+    
     if (TABULEIRO[numAleatorio] != 0) {
       console.log("CPU " + cpuNum + ": numero ja marcado");
       return false;
